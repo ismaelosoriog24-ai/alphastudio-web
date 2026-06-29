@@ -1,0 +1,30 @@
+/* ========================================
+   ALPHASTUDIO - CONTACT.CSS
+   Contacto y WhatsApp
+   ======================================== */
+
+.contact {
+  text-align: center;
+  background:
+    radial-gradient(circle at center, rgba(59,130,246,.12), transparent 40%),
+    #050505;
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  background: #25d366;
+  color: #000;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 40px;
+  font-weight: 700;
+  box-shadow: 0 0 30px rgba(37,211,102,.25);
+  transition: .3s;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-5px);
+}

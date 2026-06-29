@@ -1,0 +1,188 @@
+/* ========================================
+   ALPHASTUDIO - RESPONSIVE.CSS
+   Adaptación tablet y móvil
+   ======================================== */
+
+@media (max-width: 900px) {
+  body {
+    cursor: auto;
+  }
+
+  .cursor-dot,
+  .cursor-light {
+    display: none;
+  }
+
+  .grid,
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 78px;
+    right: 8%;
+    flex-direction: column;
+    background: #111;
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .hero-logo {
+    width: 120px;
+  }
+
+  h1 {
+    font-size: clamp(42px, 12vw, 64px);
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+    cursor: auto;
+  }
+
+  .video-background,
+  .particles,
+  .cursor-dot,
+  .cursor-light {
+    display: none !important;
+  }
+
+  .glass {
+    backdrop-filter: none !important;
+    background: rgba(255,255,255,.06);
+  }
+
+  .header {
+    padding: 16px 24px;
+  }
+
+  .logo img {
+    height: 38px;
+  }
+
+  .nav {
+    top: 70px;
+    right: 24px;
+    left: 24px;
+    padding: 22px;
+    background: #090909;
+    border: 1px solid rgba(255,255,255,.08);
+  }
+
+  .hero {
+    min-height: 100vh;
+    padding: 120px 24px 70px;
+    background:
+      radial-gradient(circle at top, rgba(59,130,246,.20), transparent 45%),
+      linear-gradient(180deg, #020202, #050505 70%, #090909);
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .hero-logo {
+    width: 105px;
+    animation: none !important;
+    filter: drop-shadow(0 0 18px rgba(59,130,246,.35));
+  }
+
+  .hero .tag,
+  .hero h1,
+  .hero .description,
+  .hero .buttons,
+  .reveal {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .tag {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  h1 {
+    font-size: 39px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+
+  h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section {
+    padding: 75px 24px;
+    content-visibility: auto;
+    contain-intrinsic-size: 700px;
+  }
+
+  .project {
+    min-height: 240px;
+  }
+
+  .project::before {
+    transition: none !important;
+  }
+
+  .btn:hover,
+  .card:hover,
+  .step:hover,
+  .project:hover,
+  .project:hover::before,
+  .whatsapp-float:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .card,
+  .step {
+    padding: 26px;
+  }
+
+  .whatsapp-float {
+    right: 16px;
+    bottom: 16px;
+    padding: 13px 17px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 35px 24px;
+  }
+
+  footer img {
+    height: 38px;
+  }
+}

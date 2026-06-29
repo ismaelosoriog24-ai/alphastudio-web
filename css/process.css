@@ -1,0 +1,25 @@
+/* ========================================
+   ALPHASTUDIO - PROCESS.CSS
+   Proceso de trabajo
+   ======================================== */
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.step h3 {
+  font-size: 24px;
+  margin: 18px 0 14px;
+}
+
+.step p {
+  color: #bdbdbd;
+  line-height: 1.7;
+}
+
+.step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 35px rgba(59,130,246,.14);
+}

@@ -1,0 +1,17 @@
+/* ========================================
+   ALPHASTUDIO - FOOTER.CSS
+   Pie de página
+   ======================================== */
+
+footer {
+  text-align: center;
+  padding: 40px 8%;
+  color: #777;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+footer img {
+  height: 45px;
+  margin-bottom: 18px;
+  opacity: .85;
+}

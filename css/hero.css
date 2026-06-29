@@ -1,0 +1,92 @@
+/* ========================================
+   ALPHASTUDIO - HERO.CSS
+   Sección principal
+   ======================================== */
+
+
+/* ========================================
+   HERO
+   ======================================== */
+
+.hero {
+  min-height: 100vh;
+  padding: 130px 8% 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+
+/* ========================================
+   FONDO CUADRICULADO
+   ======================================== */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+
+  background-size: 70px 70px;
+
+  mask-image:
+    radial-gradient(circle at center,
+    black,
+    transparent 70%);
+}
+
+
+/* ========================================
+   CONTENIDO
+   ======================================== */
+
+.hero-content {
+  max-width: 980px;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ========================================
+   LOGO
+   ======================================== */
+
+.hero-logo {
+  width: 155px;
+  margin-bottom: 35px;
+
+  filter:
+    drop-shadow(0 0 35px rgba(59,130,246,.35));
+
+  animation:
+    float 4s ease-in-out infinite,
+    glowPulse 3s ease-in-out infinite;
+}
+
+
+/* ========================================
+   TÍTULOS
+   ======================================== */
+
+.hero h1 {
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero .tag {
+  animation: fadeDown .9s ease forwards;
+}
+
+.hero .description {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.hero .buttons {
+  animation: fadeUp 1.4s ease forwards;
+}

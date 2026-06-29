@@ -1,0 +1,115 @@
+/* ========================================
+   ALPHASTUDIO - PORTFOLIO.CSS
+   ======================================== */
+
+.project{
+
+    position:relative;
+
+    min-height:330px;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    background-size:cover;
+
+    background-position:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.45s;
+
+}
+
+.project::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:inherit;
+
+    background-size:cover;
+
+    background-position:center;
+
+    transition:.6s;
+
+}
+
+.project:hover::before{
+
+    transform:scale(1.08);
+
+}
+
+.project:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 50px rgba(59,130,246,.18);
+
+}
+
+.project-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:32px;
+
+    background:
+    linear-gradient(
+    to top,
+    rgba(0,0,0,.96),
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.08));
+
+}
+
+.project h3{
+
+    font-size:28px;
+
+    margin-bottom:12px;
+
+}
+
+.project p{
+
+    color:#d8d8d8;
+
+    line-height:1.7;
+
+    margin-bottom:22px;
+
+}
+
+.project-btn{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-btn:hover{
+
+    color:#3b82f6;
+
+}
