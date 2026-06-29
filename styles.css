@@ -142,3 +142,30 @@ document.addEventListener("mousemove", (e) => {
     ease: "power3.out"
   });
 });
+
+@media (max-width: 768px) {
+  .video-background {
+    position: absolute;
+    height: 100vh;
+  }
+
+  .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.15);
+  }
+
+  .hero {
+    min-height: 100vh;
+    padding-top: 120px;
+  }
+
+  .section {
+    background: #050505;
+  }
+
+  .dark {
+    background: #0b0b0b;
+  }
+}
