@@ -107,7 +107,7 @@ function revealOnScroll() {
 function initParticles() {
   if (!particlesContainer) return;
 
-  const totalParticles = 25;
+  const totalParticles = 12;
 
   for (let i = 0; i < totalParticles; i++) {
     const particle = document.createElement("span");
