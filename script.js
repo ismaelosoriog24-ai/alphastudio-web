@@ -9,14 +9,23 @@ menu.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
-document.addEventListener("mousemove", (e) => {
-  if (cursorDot && cursorLight) {
-    cursorDot.style.left = e.clientX + "px";
-    cursorDot.style.top = e.clientY + "px";
-    cursorLight.style.left = e.clientX + "px";
-    cursorLight.style.top = e.clientY + "px";
-  }
+if(window.innerWidth > 768){
+
+document.addEventListener("mousemove",(e)=>{
+
+    if(cursorDot && cursorLight){
+
+        cursorDot.style.left=e.clientX+"px";
+        cursorDot.style.top=e.clientY+"px";
+
+        cursorLight.style.left=e.clientX+"px";
+        cursorLight.style.top=e.clientY+"px";
+
+    }
+
 });
+
+}
 
 function revealOnScroll() {
   reveals.forEach((element) => {

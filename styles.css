@@ -154,3 +154,129 @@ document.addEventListener("mousemove", (e) => {
       linear-gradient(180deg, #020202, #050505);
   }
 }
+
+@media (max-width: 768px){
+
+  html{
+    overflow-x:hidden;
+  }
+
+  body{
+    cursor:auto;
+    overflow-x:hidden;
+  }
+
+  /* Oculta el cursor personalizado */
+  .cursor-dot,
+  .cursor-light{
+    display:none !important;
+  }
+
+  /* Oculta el video pesado */
+  .video-background{
+    display:none;
+  }
+
+  /* Hero optimizado */
+  .hero{
+
+    min-height:100vh;
+
+    padding:120px 25px 70px;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(59,130,246,.18),
+    transparent 45%),
+
+    linear-gradient(
+    180deg,
+    #020202,
+    #050505 70%,
+    #090909);
+
+  }
+
+  .hero::before{
+    display:none;
+  }
+
+  .hero-logo{
+
+    width:110px;
+
+    animation:
+      float 5s ease-in-out infinite;
+
+  }
+
+  h1{
+
+    font-size:42px;
+
+    line-height:1.1;
+
+  }
+
+  .description{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+  }
+
+  .buttons{
+
+    flex-direction:column;
+
+    width:100%;
+
+  }
+
+  .btn{
+
+    width:100%;
+
+  }
+
+  /* Una sola columna */
+
+  .grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .timeline{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .project{
+
+    min-height:260px;
+
+  }
+
+  .card,
+  .step{
+
+    padding:28px;
+
+  }
+
+  /* WhatsApp */
+
+  .whatsapp-float{
+
+    right:18px;
+
+    bottom:18px;
+
+    padding:14px 18px;
+
+  }
+
+}
